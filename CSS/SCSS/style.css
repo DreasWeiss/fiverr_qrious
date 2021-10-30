@@ -358,4 +358,141 @@ html {
   margin: 0;
   padding: 0;
 }
+
+body.light {
+  background-color: #E5E5E5;
+  color: #000000;
+}
+
+body.light header {
+  background-color: #6495ED;
+}
+
+body.light .mode {
+  background: url("../../IMG/icons/mode_light.svg");
+}
+
+body.dark {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+body.dark header {
+  background-color: #000000;
+}
+
+body.dark .mode {
+  background: url("../../IMG/icons/mode_dark.svg");
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.firstScreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider {
+  width: 100vw;
+  height: calc((100vh - 80px));
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../IMG/slider/1.jpg") !important;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider_title {
+  display: block;
+  width: 745px;
+  height: 145px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 64px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+header {
+  padding-top: 26.41px;
+  padding-bottom: 20.51px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+}
+
+header .left img {
+  margin-right: 142px;
+  width: 77.33px;
+  height: 33.08px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 75px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+}
+
+header .right button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+header .right button img {
+  width: 20px;
+  height: 18px;
+  margin-left: 16px;
+}
+
+header .right .mode {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 61px;
+}
 /*# sourceMappingURL=style.css.map */
