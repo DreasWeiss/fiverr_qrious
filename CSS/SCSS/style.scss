@@ -1,0 +1,13 @@
+@import './components/reset';
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@import './components/firstScreen';
