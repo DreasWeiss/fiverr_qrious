@@ -603,11 +603,11 @@ header .right .mode {
 }
 
 header .right .mode:hover {
-  transform: translateX(20deg);
-  -webkit-transform: translateX(20deg);
-  -moz-transform: translateX(20deg);
-  -ms-transform: translateX(20deg);
-  -o-transform: translateX(20deg);
+  transform: rotateZ(30deg);
+  -webkit-transform: rotateZ(30deg);
+  -moz-transform: rotateZ(30deg);
+  -ms-transform: rotateZ(30deg);
+  -o-transform: rotateZ(30deg);
 }
 
 .features_items {

@@ -1,3 +1,4 @@
+// Switch mode (light/dark)
 let switchMode = document.querySelector(".mode");
 
 switchMode.onclick = function () {
@@ -5,3 +6,9 @@ switchMode.onclick = function () {
 
   theme.classList.toggle("dark");
 };
+
+// Burger menu
+
+
+
+// Slider
