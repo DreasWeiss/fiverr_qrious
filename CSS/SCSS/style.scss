@@ -31,6 +31,10 @@ body {
         .pricing_item {
             background-color: #fff;
         }
+
+        footer {
+            background-color: #6495ED;
+        }
     }
 
     //Dark mode
@@ -47,6 +51,10 @@ body {
         }
 
         .pricing_item {
+            background-color: #35363A;
+        }
+
+        footer {
             background-color: #35363A;
         }
     }
@@ -398,4 +406,21 @@ header {
         font-size: 16px;
         line-height: 25px;
     }
+}
+
+// footer
+
+footer {
+    padding: 29px 0px;
+}
+
+.copyright {
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: center;
 }

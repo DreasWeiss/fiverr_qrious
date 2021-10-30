@@ -380,6 +380,10 @@ body.light .pricing_item {
   background-color: #fff;
 }
 
+body.light footer {
+  background-color: #6495ED;
+}
+
 body.dark {
   background-color: #000000;
   color: #FFFFFF;
@@ -394,6 +398,10 @@ body.dark .mode {
 }
 
 body.dark .pricing_item {
+  background-color: #35363A;
+}
+
+body.dark footer {
   background-color: #35363A;
 }
 
@@ -734,5 +742,20 @@ header .right .mode {
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
+}
+
+footer {
+  padding: 29px 0px;
+}
+
+.copyright {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
