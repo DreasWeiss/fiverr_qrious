@@ -2,6 +2,7 @@
 
 $Montserrat: "Montserrat", sans-serif;
 $openSans: "Open Sans", sans-serif;
+$dmDisplay: "DM Serif Display", serif;
 
 html {
     font-size: 10px;
@@ -12,6 +13,8 @@ html {
 }
 
 body {
+    box-sizing: border-box;
+
     //Light mode
     &.light {
         background-color: #E5E5E5;
@@ -23,6 +26,10 @@ body {
 
         .mode {
             background: url("../../IMG/icons/mode_light.svg");
+        }
+
+        .pricing_item {
+            background-color: #fff;
         }
     }
 
@@ -37,6 +44,10 @@ body {
 
         .mode {
             background: url("../../IMG/icons/mode_dark.svg");
+        }
+
+        .pricing_item {
+            background-color: #35363A;
         }
     }
 }
@@ -246,4 +257,145 @@ header {
     line-height: 40px;
     text-align: center;
     letter-spacing: -0.02em;
+}
+
+// pricing
+
+.pricing_items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.pricing_item {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 46px 20px 38px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    box-sizing: border-box;
+
+    button {
+        margin: 0 auto;
+        width: 160px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6495ED;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border: none;
+        color: #FFFFFF;
+        font-family: $openSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.pricing_item-title {
+    font-family: $dmDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 25px;
+    color: #6495ED;
+    margin-bottom: 10px;
+}
+
+.pricing_item-subtitle {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 22px;
+}
+
+.pricing_item-img {
+    width: 100%;
+    height: 192px;
+    margin-bottom: 22px;
+
+    &.first {
+        background: url("../../IMG/price/1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: bottom;
+    }
+
+    &.second {
+        background: url("../../IMG/price/2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: bottom;
+    }
+
+    &.third {
+        background: url("../../IMG/price/3.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: bottom;
+    }
+
+    &.fourth {
+        background: url("../../IMG/price/4.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: bottom;
+    }
+}
+
+.pricing_item-list {
+    width: 100%;
+    border-top: 1px solid #EBECED;
+    padding-top: 22px;
+    margin-bottom: 22px;
+
+    li {
+        padding-left: 22px;
+        font-family: $openSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 25px;
+        position: relative;
+        margin-bottom: 12px;
+
+        &:before {
+            content: url("../../IMG/icons/tick.svg");
+            position: absolute;
+            top: 4px;
+            left: 0px;
+        }
+    }
+}
+
+.pricing_item-price {
+    font-family: $dmDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 25px;
+
+    span {
+        font-family: $openSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+    }
 }

@@ -359,6 +359,10 @@ html {
   padding: 0;
 }
 
+body {
+  box-sizing: border-box;
+}
+
 body.light {
   background-color: #E5E5E5;
   color: #000000;
@@ -372,6 +376,10 @@ body.light .mode {
   background: url("../../IMG/icons/mode_light.svg");
 }
 
+body.light .pricing_item {
+  background-color: #fff;
+}
+
 body.dark {
   background-color: #000000;
   color: #FFFFFF;
@@ -383,6 +391,10 @@ body.dark header {
 
 body.dark .mode {
   background: url("../../IMG/icons/mode_dark.svg");
+}
+
+body.dark .pricing_item {
+  background-color: #35363A;
 }
 
 .container {
@@ -583,5 +595,144 @@ header .right .mode {
   line-height: 40px;
   text-align: center;
   letter-spacing: -0.02em;
+}
+
+.pricing_items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+.pricing_item {
+  width: 265px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 46px 20px 38px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.pricing_item button {
+  margin: 0 auto;
+  width: 160px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6495ED;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.pricing_item-title {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 25px;
+  color: #6495ED;
+  margin-bottom: 10px;
+}
+
+.pricing_item-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 22px;
+}
+
+.pricing_item-img {
+  width: 100%;
+  height: 192px;
+  margin-bottom: 22px;
+}
+
+.pricing_item-img.first {
+  background: url("../../IMG/price/1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+
+.pricing_item-img.second {
+  background: url("../../IMG/price/2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+
+.pricing_item-img.third {
+  background: url("../../IMG/price/3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+
+.pricing_item-img.fourth {
+  background: url("../../IMG/price/4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+
+.pricing_item-list {
+  width: 100%;
+  border-top: 1px solid #EBECED;
+  padding-top: 22px;
+  margin-bottom: 22px;
+}
+
+.pricing_item-list li {
+  padding-left: 22px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 25px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.pricing_item-list li:before {
+  content: url("../../IMG/icons/tick.svg");
+  position: absolute;
+  top: 4px;
+  left: 0px;
+}
+
+.pricing_item-price {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.pricing_item-price span {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
 }
 /*# sourceMappingURL=style.css.map */
