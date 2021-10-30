@@ -206,6 +206,10 @@ header {
                     font-size: 18px;
                     line-height: 22px;
                     cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

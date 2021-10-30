@@ -565,6 +565,10 @@ header nav ul li a {
   cursor: pointer;
 }
 
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
 header .right {
   display: flex;
   align-items: center;
