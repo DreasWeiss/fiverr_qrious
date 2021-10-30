@@ -16,6 +16,11 @@ body {
     width: 100%;
     box-sizing: border-box !important;
     overflow-x: hidden !important;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 
     .wrapper {
         width: 100%;
