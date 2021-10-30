@@ -48,6 +48,29 @@ body {
     margin: 0 auto;
 }
 
+.title {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #6495ED;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.subtitle {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-top: 32px;
+}
+
 //First Sareen
 
 .firstScreen {
@@ -70,7 +93,6 @@ body {
 .slider_title {
     display: block;
     width: 745px;
-    height: 145px;
     font-family: $openSans;
     font-style: normal;
     font-weight: bold;
@@ -157,4 +179,71 @@ header {
     }
 }
 
-//
+// Features
+
+.features_items {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+.features_item {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_item-icon {
+    display: block;
+    width: 142px;
+    height: 133px;
+    border: 2px solid #6495ED;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 40px;
+
+    &.first {
+        background: url("../../IMG/icons/1.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &.second {
+        background: url("../../IMG/icons/2.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &.third {
+        background: url("../../IMG/icons/3.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+.features_item-title {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #6495ED;
+    margin-bottom: 30px;
+}
+
+.features_item-info {
+    font-family: $openSans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
