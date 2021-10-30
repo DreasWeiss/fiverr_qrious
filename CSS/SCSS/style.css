@@ -381,7 +381,7 @@ body.light header {
 }
 
 body.light .mode {
-  background: url("../../IMG/icons/mode_light.svg");
+  background: url(".././IMG/icons/mode_light.svg");
 }
 
 body.light .pricing_item {
@@ -402,7 +402,7 @@ body.dark header {
 }
 
 body.dark .mode {
-  background: url("../../IMG/icons/mode_dark.svg");
+  background: url(".././IMG/icons/mode_dark.svg");
 }
 
 body.dark .pricing_item {
@@ -482,7 +482,7 @@ body.dark footer {
 .slider {
   width: 100%;
   height: calc((100vh - 80px));
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../IMG/slider/1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(".././IMG/slider/1.jpg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -671,19 +671,19 @@ header .right .mode {
 }
 
 .features_item-icon.first {
-  background: url("../../IMG/icons/1.svg");
+  background: url(".././IMG/icons/1.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .features_item-icon.second {
-  background: url("../../IMG/icons/2.svg");
+  background: url(".././IMG/icons/2.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .features_item-icon.third {
-  background: url("../../IMG/icons/3.svg");
+  background: url(".././IMG/icons/3.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -847,28 +847,28 @@ header .right .mode {
 }
 
 .pricing_item-img.first {
-  background: url("../../IMG/price/1.jpg");
+  background: url(".././IMG/price/1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
 }
 
 .pricing_item-img.second {
-  background: url("../../IMG/price/2.jpg");
+  background: url(".././IMG/price/2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
 }
 
 .pricing_item-img.third {
-  background: url("../../IMG/price/3.jpg");
+  background: url(".././IMG/price/3.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
 }
 
 .pricing_item-img.fourth {
-  background: url("../../IMG/price/4.jpg");
+  background: url(".././IMG/price/4.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
@@ -893,7 +893,7 @@ header .right .mode {
 }
 
 .pricing_item-list li:before {
-  content: url("../../IMG/icons/tick.svg");
+  content: url(".././IMG/icons/tick.svg");
   position: absolute;
   top: 4px;
   left: 0px;
