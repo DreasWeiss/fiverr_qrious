@@ -246,6 +246,14 @@ header {
             background-repeat: no-repeat;
             background-size: contain;
             margin-right: 61px;
+
+            &:hover {
+                transform: translateX(20deg);
+                -webkit-transform: translateX(20deg);
+                -moz-transform: translateX(20deg);
+                -ms-transform: translateX(20deg);
+                -o-transform: translateX(20deg);
+            }
         }
     }
 }

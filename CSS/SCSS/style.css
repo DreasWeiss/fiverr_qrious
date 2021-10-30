@@ -602,6 +602,14 @@ header .right .mode {
   margin-right: 61px;
 }
 
+header .right .mode:hover {
+  transform: translateX(20deg);
+  -webkit-transform: translateX(20deg);
+  -moz-transform: translateX(20deg);
+  -ms-transform: translateX(20deg);
+  -o-transform: translateX(20deg);
+}
+
 .features_items {
   margin-top: 80px;
   display: flex;
