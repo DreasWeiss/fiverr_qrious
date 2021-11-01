@@ -588,10 +588,10 @@ body.dark footer {
     -o-border-radius: 50%;
   }
   .tns-controls button:first-child {
-    background: url("../../IMG/icons/arrow.svg") no-repeat center, #FFFFFF;
+    background: url(".././IMG/icons/arrow.svg") no-repeat center, #FFFFFF;
   }
   .tns-controls button:last-child {
-    background: url("../../IMG/icons/arrow.svg") no-repeat center, #FFFFFF;
+    background: url(".././IMG/icons/arrow.svg") no-repeat center, #FFFFFF;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -779,6 +779,7 @@ header .menu nav ul li a:hover {
     position: absolute;
     top: 80px;
     right: -100%;
+    z-index: 100;
     background-color: #1DABF2;
     flex-direction: column;
     box-sizing: border-box;
