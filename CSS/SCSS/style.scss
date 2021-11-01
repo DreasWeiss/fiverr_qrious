@@ -133,21 +133,136 @@ body {
     height: 100vh;
 }
 
-.slider {
+.slider__slider {
+    position: relative;
+}
+
+.my-slider {
+    width: 100%;
+}
+
+.slide {
     width: 100%;
     height: calc((100vh - 80px));
+    position: relative;
+}
+
+.slide_1 {
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(".././IMG/slider/1.jpg");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.slide_2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(".././IMG/slider/2.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide_3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(".././IMG/slider/1.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tns-nav {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 10;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+
+    button {
+        display: block;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: none;
+        background-color: #FFFFFF !important;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .tns-nav-active {
+        background-color: #1DABF2 !important;
+    }
+}
+
+.tns-controls {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between !important;
+    margin: 0 auto !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+
+    button {
+        display: none;
+    }
+
+    @media screen and (min-width: 900px) {
+        justify-content: space-between;
+
+        button {
+            display: block;
+            width: 26px;
+            height: 26px;
+            border: none;
+            background: no-repeat center;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+        button:first-child {
+            background: url("../../IMG/icons/arrow.svg") no-repeat center, #FFFFFF;
+        }
+
+        button:last-child {
+            background: url("../../IMG/icons/arrow.svg") no-repeat center, #FFFFFF;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+
+        .slides {
+            bottom: 53px;
+
+            button {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
 }
 
 .slider_title {
     display: block;
     width: 745px;
+    margin: auto auto !important;
     font-family: $openSans;
     font-style: normal;
     font-weight: bold;
@@ -155,6 +270,14 @@ body {
     line-height: 64px;
     text-align: center;
     color: #FFFFFF;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 
     @media screen and (max-width: 1200px) and (min-width: 321px) {
         width: calc((23.5rem + 510 * (100vw - 320px) / 880));

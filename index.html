@@ -1,146 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <title>Document</title>
 </head>
+
 <body class="light" id="theme">
     <div class="wrapper">
-    <section class="firstScreen">
-        <header>
-            <div class="container header_container">
-                <img src="./IMG/Logo.svg" alt="Logo" class="logo">
-                <button class="menu_icon active">меню <span></span></button>
+        <section class="firstScreen">
+            <header>
+                <div class="container header_container">
+                    <img src="./IMG/Logo.svg" alt="Logo" class="logo">
+                    <button class="menu_icon active">меню <span></span></button>
 
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li><a class="menu-link" data-goto=".features" href="#">Features</a></li>
-                            <li><a class="menu-link" data-goto=".pricing" href="#">Pricing</a></li>
-                            <li><a class="menu-link" data-goto=".footer" href="#">About Us</a></li>
-                        </ul>
-                    </nav>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a class="menu-link" data-goto=".features" href="#">Features</a></li>
+                                <li><a class="menu-link" data-goto=".pricing" href="#">Pricing</a></li>
+                                <li><a class="menu-link" data-goto=".footer" href="#">About Us</a></li>
+                            </ul>
+                        </nav>
 
-                    <div class="settings">
-                        <button class="mode"></button>
-                        <button><span>Logout</span><img src="./IMG/icons/logout.svg" alt="logout"></button>
+                        <div class="settings">
+                            <button class="mode"></button>
+                            <button><span>Logout</span><img src="./IMG/icons/logout.svg" alt="logout"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+            <div class="slider__slider">
+                <div class="my-slider">
+                    <div class="slide slide_1">
+                        <div class="slider_title">Are you trying to change the world?</div>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slider_title">Are you trying to change the world?</div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slider_title">Are you trying to change the world?</div>
                     </div>
                 </div>
-
             </div>
-        </header>
-        <div class="slider">
-            <div class="slider_title">
-                Are you trying to change the world?
-            </div>
-        </div>
-    </section>
+            
+        </section>
 
-    <section class="features">
-        <div class="container">
-            <div class="title">WHAT YOU GET</div>
-            <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum tellus turpis nulla fringilla id. Tellus lorem posuere et a. Magnis a, risus donec nulla sit cursus egestas pharetra. Etiam gravida massa enim ultrices. Mauris cursus donec eget bibend</div>
-            <div class="features_items">
-                <div class="features_item">
-                    <div class="features_item-icon first"></div>
-                    <div class="features_item-title">No Advertising Ever</div>
-                    <div class="features_item-info">The app is built to help and empower you to learn, and not waste your time.</div>
+        <section class="features">
+            <div class="container">
+                <div class="title">WHAT YOU GET</div>
+                <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum tellus turpis
+                    nulla
+                    fringilla id. Tellus lorem posuere et a. Magnis a, risus donec nulla sit cursus egestas pharetra.
+                    Etiam
+                    gravida massa enim ultrices. Mauris cursus donec eget bibend</div>
+                <div class="features_items">
+                    <div class="features_item">
+                        <div class="features_item-icon first"></div>
+                        <div class="features_item-title">No Advertising Ever</div>
+                        <div class="features_item-info">The app is built to help and empower you to learn, and not waste
+                            your time.</div>
+                    </div>
+
+                    <div class="features_item">
+                        <div class="features_item-icon second"></div>
+                        <div class="features_item-title">Personal, Not Social</div>
+                        <div class="features_item-info">Its just you and the app. The more honest you are with your
+                            answers,
+                            the more this app can provide</div>
+                    </div>
+
+                    <div class="features_item">
+                        <div class="features_item-icon third"></div>
+                        <div class="features_item-title">Statistics</div>
+                        <div class="features_item-info">It records learner’s progress and creates simple yet effective
+                            graph
+                            and chart for easy tracking</div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="features_item">
-                    <div class="features_item-icon second"></div>
-                    <div class="features_item-title">Personal, Not Social</div>
-                    <div class="features_item-info">Its just you and the app. The more honest you are with your answers, the more this app can provide</div>
+        <section class="pricing">
+            <div class="container">
+
+
+                <div class="title">SUBSCRIPTIONS & PRICING</div>
+                <div class="subtitle">Choose a plan that fits you</div>
+                <div class="pricing_items">
+                    <div class="pricing_item">
+                        <div class="pricing_item-title">Free</div>
+                        <div class="pricing_item-subtitle">For Kids</div>
+                        <div class="pricing_item-img first"></div>
+                        <ul class="pricing_item-list">
+                            <li>Add your own branding</li>
+                            <li>View popularity analytics</li>
+                            <li>Up to 1500 customer profiles</li>
+                            <li>View demographic insights</li>
+                        </ul>
+                        <div class="pricing_item-price">$00<span>/month</span></div>
+                        <button>JOIN</button>
+                    </div>
+
+                    <div class="pricing_item">
+                        <div class="pricing_item-title">Schools</div>
+                        <div class="pricing_item-subtitle">For Educational Systems</div>
+                        <div class="pricing_item-img second"></div>
+                        <ul class="pricing_item-list">
+                            <li>Add your own branding</li>
+                            <li>View popularity analytics</li>
+                            <li>Up to 1500 customer profiles</li>
+                            <li>View demographic insights</li>
+                        </ul>
+                        <div class="pricing_item-price">$00<span>/month</span></div>
+                        <button>Coming Soon</button>
+                    </div>
+
+                    <div class="pricing_item">
+                        <div class="pricing_item-title">Pro</div>
+                        <div class="pricing_item-subtitle">For Highly Skilled Individuals</div>
+                        <div class="pricing_item-img third"></div>
+                        <ul class="pricing_item-list">
+                            <li>Add your own branding</li>
+                            <li>View popularity analytics</li>
+                            <li>Up to 1500 customer profiles</li>
+                            <li>View demographic insights</li>
+                        </ul>
+                        <div class="pricing_item-price">$25<span>/month</span></div>
+                        <button>JOIN</button>
+                    </div>
+
+                    <div class="pricing_item">
+                        <div class="pricing_item-title">Enterprise</div>
+                        <div class="pricing_item-subtitle">For Organizations</div>
+                        <div class="pricing_item-img fourth"></div>
+                        <ul class="pricing_item-list">
+                            <li>Add your own branding</li>
+                            <li>View popularity analytics</li>
+                            <li>Up to 1500 customer profiles</li>
+                            <li>View demographic insights</li>
+                        </ul>
+                        <div class="pricing_item-price">$00<span>/month</span></div>
+                        <button>JOIN</button>
+                    </div>
+
                 </div>
-
-                <div class="features_item">
-                    <div class="features_item-icon third"></div>
-                    <div class="features_item-title">Statistics</div>
-                    <div class="features_item-info">It records learner’s progress and creates simple yet effective graph and chart for easy tracking</div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="pricing">
-        <div class="container">
+        <footer class="footer">
+            <div class="copyright">Copyright Q-rious@2021</div>
+        </footer>
 
-        
-        <div class="title">SUBSCRIPTIONS & PRICING</div>
-        <div class="subtitle">Choose a plan that fits you</div>
-        <div class="pricing_items">
-            <div class="pricing_item">
-                <div class="pricing_item-title">Free</div>
-                <div class="pricing_item-subtitle">For Kids</div>
-                <div class="pricing_item-img first"></div>
-                <ul class="pricing_item-list">
-                    <li>Add your own branding</li>
-                    <li>View popularity analytics</li>
-                    <li>Up to 1500 customer profiles</li>
-                    <li>View demographic insights</li>
-                </ul>
-                <div class="pricing_item-price">$00<span>/month</span></div>
-                <button>JOIN</button>
-            </div>
+        <script src="./JS/script.js"></script>
 
-            <div class="pricing_item">
-                <div class="pricing_item-title">Schools</div>
-                <div class="pricing_item-subtitle">For Educational Systems</div>
-                <div class="pricing_item-img second"></div>
-                <ul class="pricing_item-list">
-                    <li>Add your own branding</li>
-                    <li>View popularity analytics</li>
-                    <li>Up to 1500 customer profiles</li>
-                    <li>View demographic insights</li>
-                </ul>
-                <div class="pricing_item-price">$00<span>/month</span></div>
-                <button>Coming Soon</button>
-            </div>
-
-            <div class="pricing_item">
-                <div class="pricing_item-title">Pro</div>
-                <div class="pricing_item-subtitle">For Highly Skilled Individuals</div>
-                <div class="pricing_item-img third"></div>
-                <ul class="pricing_item-list">
-                    <li>Add your own branding</li>
-                    <li>View popularity analytics</li>
-                    <li>Up to 1500 customer profiles</li>
-                    <li>View demographic insights</li>
-                </ul>
-                <div class="pricing_item-price">$25<span>/month</span></div>
-                <button>JOIN</button>
-            </div>
-
-            <div class="pricing_item">
-                <div class="pricing_item-title">Enterprise</div>
-                <div class="pricing_item-subtitle">For Organizations</div>
-                <div class="pricing_item-img fourth"></div>
-                <ul class="pricing_item-list">
-                    <li>Add your own branding</li>
-                    <li>View popularity analytics</li>
-                    <li>Up to 1500 customer profiles</li>
-                    <li>View demographic insights</li>
-                </ul>
-                <div class="pricing_item-price">$00<span>/month</span></div>
-                <button>JOIN</button>
-            </div>
-
-        </div>
+        <script 
+src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     </div>
-    </section>
-
-    <footer class="footer">
-        <div class="copyright">Copyright Q-rious@2021</div>
-    </footer>
-
-    <script src="./JS/script.js"></script>
-</div>
 </body>
+
 </html>
