@@ -15,21 +15,23 @@
     <div class="wrapper">
     <section class="firstScreen">
         <header>
-            <div class="container">
-                <div class="left">
-                    <img src="./IMG/Logo.svg" alt="Logo" class="logo">
+            <div class="container header_container">
+                <img src="./IMG/Logo.svg" alt="Logo" class="logo">
+                <button class="menu_icon active">меню <span></span></button>
+
+                <div class="menu">
                     <nav>
                         <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#about">About Us</a></li>
+                            <li><a class="menu-link" data-goto=".features" href="#">Features</a></li>
+                            <li><a class="menu-link" data-goto=".pricing" href="#">Pricing</a></li>
+                            <li><a class="menu-link" data-goto=".footer" href="#">About Us</a></li>
                         </ul>
                     </nav>
-                </div>
-                
-                <div class="right">
-                    <button class="mode"></button>
-                    <button><span>Logout</span><img src="./IMG/icons/logout.svg" alt="logout"></button>
+
+                    <div class="settings">
+                        <button class="mode"></button>
+                        <button><span>Logout</span><img src="./IMG/icons/logout.svg" alt="logout"></button>
+                    </div>
                 </div>
 
             </div>
@@ -41,7 +43,7 @@
         </div>
     </section>
 
-    <section class="features" id="features">
+    <section class="features">
         <div class="container">
             <div class="title">WHAT YOU GET</div>
             <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum tellus turpis nulla fringilla id. Tellus lorem posuere et a. Magnis a, risus donec nulla sit cursus egestas pharetra. Etiam gravida massa enim ultrices. Mauris cursus donec eget bibend</div>
@@ -67,7 +69,7 @@
         </div>
     </section>
 
-    <section class="pricing" id="pricing">
+    <section class="pricing">
         <div class="container">
 
         
@@ -134,7 +136,7 @@
     </div>
     </section>
 
-    <footer id="about">
+    <footer class="footer">
         <div class="copyright">Copyright Q-rious@2021</div>
     </footer>
 

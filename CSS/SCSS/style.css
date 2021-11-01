@@ -524,37 +524,122 @@ body.dark footer {
   }
 }
 
+.menu_icon {
+  display: none;
+  font-size: 0;
+  background: none;
+  border: none;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.menu_icon span {
+  width: 21.5px;
+  height: 3px;
+  display: block;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  transform: translate(50%, -40%);
+  -webkit-transform: translate(50%, -40%);
+  -moz-transform: translate(50%, -40%);
+  -ms-transform: translate(50%, -40%);
+  -o-transform: translate(50%, -40%);
+}
+
+.menu_icon span:before {
+  content: '';
+  width: 21.5px;
+  height: 3px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.menu_icon span::after {
+  content: '';
+  width: 21.5px;
+  height: 3px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+}
+
+.menu_icon span, .menu_icon span:after, .menu_icon span:before {
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+.menu_icon._active span:before {
+  top: 0;
+}
+
+.menu_icon._active span:after {
+  bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .menu_icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+}
+
 header {
   padding-top: 26.41px;
   padding-bottom: 20.51px;
+  position: relative;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .left {
+header .header_container {
   display: flex;
   align-items: center;
 }
 
-header .left img {
+@media screen and (max-width: 900px) {
+  header .header_container {
+    justify-content: space-around;
+  }
+}
+
+header .logo {
   margin-right: 142px;
   width: 77.33px;
   height: 33.08px;
 }
 
-header nav ul {
+@media screen and (max-width: 900px) {
+  header .logo {
+    margin-right: 0;
+  }
+}
+
+header .menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .menu nav ul {
   display: flex;
 }
 
-header nav ul li {
+header .menu nav ul li {
   margin-right: 75px;
 }
 
-header nav ul li a {
+header .menu nav ul li a {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
@@ -565,16 +650,52 @@ header nav ul li a {
   cursor: pointer;
 }
 
-header nav ul li a:hover {
+header .menu nav ul li a:hover {
   text-decoration: underline;
 }
 
-header .right {
+@media screen and (max-width: 900px) {
+  header .menu {
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    background-color: #1DABF2;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: right 0.5s ease 0s;
+    -webkit-transition: right 0.5s ease 0s;
+    -moz-transition: right 0.5s ease 0s;
+    -ms-transition: right 0.5s ease 0s;
+    -o-transition: right 0.5s ease 0s;
+  }
+  header .menu._active {
+    right: 0;
+  }
+  header .menu nav {
+    margin-top: 20px;
+  }
+  header .menu nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .menu nav ul li {
+    padding: 20px;
+    margin: 0;
+  }
+  header .menu .settings {
+    margin-top: 30px;
+    width: 90%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+
+header .settings {
   display: flex;
   align-items: center;
 }
 
-header .right button {
+header .settings button {
   border: none;
   background: none;
   padding: 0;
@@ -587,17 +708,17 @@ header .right button {
   align-items: center;
 }
 
-header .right button img {
+header .settings button img {
   width: 20px;
   height: 18px;
   margin-left: 16px;
 }
 
-header .right button span {
+header .settings button span {
   display: block;
 }
 
-header .right .mode {
+header .settings .mode {
   width: 24px;
   height: 24px;
   background-position: center;
@@ -606,7 +727,7 @@ header .right .mode {
   margin-right: 61px;
 }
 
-header .right .mode:hover {
+header .settings .mode:hover {
   transform: rotateZ(30deg);
   -webkit-transform: rotateZ(30deg);
   -moz-transform: rotateZ(30deg);
@@ -941,7 +1062,7 @@ footer {
 
 .copyright {
   display: block;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

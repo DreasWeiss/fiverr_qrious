@@ -169,53 +169,175 @@ body {
     }
 }
 
-header {
-    padding-top: 26.41px;
-    padding-bottom: 20.51px;
+.menu_icon {
+    display: none;
+    font-size: 0;
+    background: none;
+    border: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    span {
+        width: 21.5px;
+        height: 3px;
+        display: block;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        left: -40%;
+        transform: translate(50%, -40%);
+        -webkit-transform: translate(50%, -40%);
+        -moz-transform: translate(50%, -40%);
+        -ms-transform: translate(50%, -40%);
+        -o-transform: translate(50%, -40%);
 
-    .left {
-        display: flex;
-        align-items: center;
+        &:before {
+            content: '';
+            width: 21.5px;
+            height: 3px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 6px;
+            left: 0;
+        }
 
-        img {
-            margin-right: 142px;
-            width: 77.33px;
-            height: 33.08px;
+        &::after {
+            content: '';
+            width: 21.5px;
+            height: 3px;
+            background-color: #FFFFFF;
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+        }
+
+        &, &:after, &:before {
+            transition: all 0.5s ease 0s;
+            -webkit-transition: all 0.5s ease 0s;
+            -moz-transition: all 0.5s ease 0s;
+            -ms-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
         }
     }
 
-    nav {
-        ul {
-            display: flex;
+    &._active {
+        span {
+            &:before {
+                top: 0;
+            }
 
-            li {
-                margin-right: 75px;
-
-                a {
-                    text-decoration: none;
-                    color: #FFFFFF;
-                    font-family: $Montserrat;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 22px;
-                    cursor: pointer;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
+            &:after {
+                bottom: 0;
             }
         }
     }
 
-    .right {
+    @media screen and (max-width: 900px) {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+header {
+    padding-top: 26.41px;
+    padding-bottom: 20.51px;
+    position: relative;
+
+    .header_container {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 900px) {
+            justify-content: space-around;
+        }
+    }
+
+    .logo {
+        margin-right: 142px;
+        width: 77.33px;
+        height: 33.08px;
+
+        @media screen and (max-width: 900px) {
+            margin-right: 0;
+        }
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        nav {
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 75px;
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        text-decoration: none;
+                        color: #FFFFFF;
+                        font-family: $Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 22px;
+                        cursor: pointer;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            position: absolute;
+            top: 80px;
+            right: -100%;
+            background-color: #1DABF2;
+            flex-direction: column;
+            box-sizing: border-box;
+            transition: right 0.5s ease 0s;
+            -webkit-transition: right 0.5s ease 0s;
+            -moz-transition: right 0.5s ease 0s;
+            -ms-transition: right 0.5s ease 0s;
+            -o-transition: right 0.5s ease 0s;
+
+            &._active {
+                right: 0;
+            }
+
+            nav {
+                margin-top: 20px;
+
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        padding: 20px;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .settings {
+                margin-top: 30px;
+                width: 90%;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .settings {
         display: flex;
         align-items: center;
 
@@ -563,7 +685,7 @@ footer {
 
 .copyright {
     display: block;
-    font-family: Montserrat;
+    font-family: $Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
