@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
       ) {
         const gotoBlock = document.querySelector(menuLink.dataset.goto);
         const gotoBlockValue =
-          gotoBlock.getBoundingClientRect().top + pageYOffset - 30;
+          gotoBlock.getBoundingClientRect().top + pageYOffset - 100;
 
         window.scrollTo({
           top: gotoBlockValue,
@@ -62,8 +62,8 @@ window.addEventListener("DOMContentLoaded", () => {
     items: 1,
     slideBy: "page",
     controls: true,
-    controlsText: ['',''],
-    controlsPosition: 'bottom',
+    controlsText: ["", ""],
+    controlsPosition: "bottom",
     mouseDrag: true,
     swipeAngle: false,
     speed: 400,
