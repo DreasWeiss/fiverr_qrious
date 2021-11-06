@@ -1043,8 +1043,11 @@ header .settings .mode:hover {
 
 .pricing_item {
   width: 265px;
+  height: min-content;
+  min-height: 667px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 16px;
   padding: 46px 20px 38px;
   -webkit-border-radius: 16px;
