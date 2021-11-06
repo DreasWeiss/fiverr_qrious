@@ -1056,9 +1056,15 @@ header .settings .mode:hover {
 
 @media screen and (max-width: 1150px) {
   .pricing_item {
-    margin-left: 30px;
-    margin-right: 30px;
     margin-bottom: 66px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 602px) {
+  .pricing_item {
+    margin-bottom: 66px;
+    width: 90%;
   }
 }
 
@@ -1112,29 +1118,29 @@ header .settings .mode:hover {
 .pricing_item-img.first {
   background: url("https://source.unsplash.com/random");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center;
 }
 
 .pricing_item-img.second {
   background: url("https://source.unsplash.com/daily");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center;
 }
 
 .pricing_item-img.third {
   background: url("https://source.unsplash.com/weekly?water");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center;
 }
 
 .pricing_item-img.fourth {
   background: url("https://source.unsplash.com/1600x900/?nature,water");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center;
 }
 
 .pricing_item-list {
